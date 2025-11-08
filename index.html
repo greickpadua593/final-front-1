@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Carrega o CSS do Bootstrap primeiro -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Depois carrega o seu style.css para sobrescrever o Bootstrap quando necessário -->
+    <link rel="stylesheet" href="style.css">
+    <!-- scripts podem permanecer aqui ou no final do body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Jogo da Memória</title>
+</head>
+<body>
+  <h1>Jogo da Memória</h1>
+
+  <div id="controle">
+    <button id="comecar" type="button" class="btn btn-primary">Começar / Reiniciar</button>
+
+    <!-- botão para alternar tema (Funcionalidade 1) -->
+    <button id="btnTema" type="button" class="btn btn-secondary">Ativar Modo Escuro</button>
+
+    <!-- botão para pedir dica (Funcionalidade 2) -->
+    <button id="btnDica" type="button" class="btn btn-info">Pedir Dica</button>
+
+    <div id="resultado">0 pares encontrados</div>
+
+    <!-- indicador de tentativas restantes (Funcionalidade 3) -->
+    <div id="tentativasRestantes" style="margin-left:12px; font-weight:600;">Tentativas Restantes: -</div>
+  </div>
+
+  <div id="tabuleiro" aria-live="polite"></div>
+
+  <script src="javascript.js" defer></script>
+</body>
+</html>
